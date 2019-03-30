@@ -1,7 +1,8 @@
 name: repository
 description: New Flutter Plugin
 version: 1.0.0
-author: Magezmj <magezmj@gmail.com>
+author: magazmj<magazmj@gmail.com>
+homepage: https://github.com/magazmj/repository
 
 environment:
   sdk: ">=2.0.0 <3.0.0"
