@@ -1,0 +1,15 @@
+builders:
+  repository_generator:
+    import: "package:repository_generator/builder.dart"
+    builder_factories: ["repositoryGenerator"]
+    build_extensions: {".dart": [".repository.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
+
+  repo_builder:
+    import: "package:repository_generator/builder.dart"
+    builder_factories: ["repoBuilder"]
+    build_extensions: {"$lib$": ["generated.dart"]}
+    auto_apply: dependents
+    build_to: source
